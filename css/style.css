@@ -1,0 +1,263 @@
+
+/*****************
+GENERAL
+******************/
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+  color: #2f2d2d;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1366px;
+  background-color: #FFF;
+  text-align: center;
+}
+
+body,
+header,
+footer {
+  background-color: #f8f8f8;
+}
+
+h1 {
+  color: rgb(38, 113, 149);
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+h2 {
+  padding: 50px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+h3 {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+img {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(38, 113, 149);
+}
+
+
+
+/*****************
+HEADER
+******************/
+
+.name-and-nav {
+  padding: 5px 0 40px 0;
+}
+
+.main-nav li:last-child {
+  padding-right: 0;
+}
+
+.main-nav li {
+  background: #FFF;
+  font-weight: 700;
+  font-size: .9em;
+  margin: 5px auto;
+  list-style: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.main-nav li a {
+  display: inline-block;
+  width:100%;
+}
+
+.profile-image-container {
+  margin: 0 auto;
+  width:60%;
+  padding-bottom: 20px;
+}
+
+.profile-image {
+  width: 100%;
+}
+
+.intro {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width:90%;
+}
+
+
+
+/*****************
+MAIN BODY
+******************/
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  width:90%;
+  padding-bottom: 30px;
+}
+
+.content p {
+  width: 95%;
+  padding-bottom: 30px;
+}
+
+.content img {
+  width: 100%;
+}
+
+
+
+/*****************
+FOOTER
+******************/
+
+footer {
+  padding-top: 20px;
+}
+
+footer p {
+  padding: 10px 0;
+}
+
+footer h2 {
+  padding: 20px 0;
+}
+
+.footer-info {
+  padding-bottom: 30px;
+}
+
+.footer-info a:link {
+  font-weight: bold;
+}
+
+hr {
+  margin: 0 auto;
+  opacity: .3;
+}
+
+.footer-nav p {
+  padding: 20px 0;
+}
+
+.footer-nav-name {
+  float:left;
+  font-weight: bold;
+}
+
+.footer-min-nav {
+  float:right;
+}
+
+.footer-main-nav {
+  display: none;
+}
+
+
+/*** Clearfix ***/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+/*****************************
+RESPONSIVE SECTION
+******************************/
+
+@media (min-width: 768px) {
+
+.main-nav li {
+  background: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.profile-image-container {
+  float: right;
+  width: 40%;
+  padding-bottom: 30px;
+}
+
+.intro {
+  float: left;
+  text-align: left;
+  padding-right: 10px;
+  width: 60%;
+}
+
+.content-block  {
+  display: inline-block;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.content-block p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.content-block h3 {
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  width: 60%;
+}
+
+.footer-min-nav {
+  display: none;
+}
+
+.footer-main-nav {
+  display: inline-block;
+  padding: 20px 0;
+  float:right;
+}
+
+.footer-main-nav li {
+  padding-top: 0;
+  float: left;
+}
+
+}
+
+
+@media (min-width: 1024px) {
+
+.content-block  {
+  width: 33.33%;
+}
+
+.name {
+  float:left;
+}
+
+.main-nav {
+  padding-top: 15px;
+  float: right;
+}
+
+}
