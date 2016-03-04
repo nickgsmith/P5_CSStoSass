@@ -1,0 +1,171 @@
+/*****************
+HEADER
+******************/
+
+.name {
+  @include desktop {
+  float:left;
+  }
+}
+
+.name-and-nav {
+  padding: 5px 0 40px 0;
+}
+
+.main-nav li:last-child {
+  padding-right: 0;
+}
+
+.main-nav li {
+  background: #FFF;
+  font-weight: 700;
+  font-size: .9em;
+  margin: 5px auto;
+  list-style: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  @include tablet {
+    background: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+  }
+  @include desktop {
+    padding-top: 15px;
+    float: right;
+}
+}
+
+.main-nav li a {
+  display: inline-block;
+  width:100%;
+}
+
+.profile-image-container {
+  margin: 0 auto;
+  width:60%;
+  padding-bottom: 20px;
+  @include tablet  {
+    float: right;
+    width: 40%;
+    padding-bottom: 30px;
+  }
+}
+
+.profile-image {
+  width: 100%;
+}
+
+.intro {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width:90%;
+  @include tablet {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+    width: 60%;
+  }
+}
+
+/*****************
+MAIN BODY
+******************/
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  width:90%;
+  padding-bottom: 30px;
+}
+
+.content-block {
+  @include tablet {
+  display: inline-block;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;    
+  }
+  @include desktop  {
+  width: 33.33%;
+  }
+  p {
+    @include tablet {
+    width: 75%;
+    margin: 0 auto;   
+    }
+  h3 {
+    @include tablet {
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  }
+}
+}
+
+.content p {
+  width: 95%;
+  padding-bottom: 30px;
+}
+
+.content img {
+  width: 100%;
+}
+
+/*****************
+FOOTER
+******************/
+
+footer {
+  padding-top: 20px;
+}
+
+footer p {
+  padding: 10px 0;
+}
+
+footer h2 {
+  padding: 20px 0;
+}
+
+.footer-info {
+  padding-bottom: 30px;
+  @include tablet {
+    width: 60%;
+  }
+}
+
+.footer-info a:link {
+  font-weight: bold;
+}
+
+hr {
+  margin: 0 auto;
+  opacity: .3;
+}
+
+.footer-nav p {
+  padding: 20px 0;
+}
+
+.footer-nav-name {
+  float:left;
+  font-weight: bold;
+}
+
+.footer-min-nav {
+  float:right;
+  @include tablet {
+    display: none;
+  }
+}
+
+.footer-main-nav {
+  display: none;
+  @include tablet {
+  display: inline-block;
+  padding: 20px 0;
+  float:right;    
+  }
+}
