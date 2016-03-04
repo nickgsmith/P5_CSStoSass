@@ -1,9 +1,12 @@
+*, .intro, .content {
+  margin: 0 auto;
+  text-align: center; }
+
 /*****************
 GENERAL
 ******************/
 * {
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.4;
@@ -50,42 +53,6 @@ a:hover {
   display: table;
   clear: both; }
 
-/*****************
-HEADER
-******************/
-@media (min-width: 1024px) {
-  .name {
-    float: left; } }
-
-.name-and-nav {
-  padding: 5px 0 40px 0; }
-
-.main-nav li:last-child {
-  padding-right: 0; }
-
-.main-nav li {
-  background: #FFF;
-  font-weight: 700;
-  font-size: .9em;
-  margin: 5px auto;
-  list-style: none;
-  padding: 10px 0;
-  text-transform: uppercase; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .main-nav li {
-      background: none;
-      padding-left: 15px;
-      padding-right: 15px;
-      display: inline-block; } }
-  @media (min-width: 1024px) {
-    .main-nav li {
-      padding-top: 15px;
-      float: right; } }
-
-.main-nav li a {
-  display: inline-block;
-  width: 100%; }
-
 .profile-image-container {
   margin: 0 auto;
   width: 60%;
@@ -99,9 +66,41 @@ HEADER
 .profile-image {
   width: 100%; }
 
+/*****************
+HEADER
+******************/
+@media (min-width: 1024px) {
+  .name {
+    float: left; } }
+
+.name-and-nav {
+  padding: 5px 0 40px 0; }
+
+.main-nav li {
+  background: #FFF;
+  font-weight: 700;
+  font-size: .9em;
+  margin: 5px auto;
+  list-style: none;
+  padding: 10px 0;
+  text-transform: uppercase; }
+  .main-nav li:last-child {
+    padding-right: 0; }
+  .main-nav li a {
+    display: inline-block;
+    width: 100%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .main-nav li {
+      background: none;
+      padding: 15px;
+      display: inline-block; } }
+  @media (min-width: 1024px) {
+    .main-nav li {
+      padding: 15px;
+      float: right; } }
+
 .intro {
-  margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   width: 90%; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .intro {
@@ -114,57 +113,31 @@ HEADER
 MAIN BODY
 ******************/
 .content {
-  text-align: center;
-  margin: 0 auto;
-  width: 90%;
-  padding-bottom: 30px; }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .content-block {
-    display: inline-block;
-    width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    vertical-align: top; } }
-@media (min-width: 1024px) {
-  .content-block {
-    width: 33.33%; } }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .content-block p {
-    width: 75%;
-    margin: 0 auto; } }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .content-block p h3 {
-    padding-bottom: 10px;
-    margin: 0 auto; } }
-
-.content p {
-  width: 95%;
-  padding-bottom: 30px; }
-
-.content img {
-  width: 100%; }
+  padding-bottom: 30px;
+  width: 90%; }
+  .content p {
+    width: 95%;
+    padding-bottom: 30px; }
+  .content img {
+    width: 100%; }
 
 /*****************
 FOOTER
 ******************/
 footer {
   padding-top: 20px; }
-
-footer p {
-  padding: 10px 0; }
-
-footer h2 {
-  padding: 20px 0; }
+  footer p {
+    padding: 10px 0; }
+  footer h2 {
+    padding: 20px 0; }
 
 .footer-info {
   padding-bottom: 30px; }
+  .footer-info a:link {
+    font-weight: bold; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .footer-info {
       width: 60%; } }
-
-.footer-info a:link {
-  font-weight: bold; }
 
 hr {
   margin: 0 auto;
@@ -190,5 +163,24 @@ hr {
       display: inline-block;
       padding: 20px 0;
       float: right; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-block {
+    display: inline-block;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top; } }
+@media (min-width: 1024px) {
+  .content-block {
+    width: 33.33%; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-block p {
+    width: 75%;
+    margin: 0 auto; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-block p h3 {
+    padding-bottom: 10px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

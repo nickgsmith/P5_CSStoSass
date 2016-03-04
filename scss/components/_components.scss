@@ -1,0 +1,14 @@
+.profile-image-container {
+  margin: 0 auto;
+  width:60%;
+  padding-bottom: 20px;
+  @include tablet  {
+    float: right;
+    width: 40%;
+    padding-bottom: 30px;
+  }
+}
+
+.profile-image {
+  width: 100%;
+}

@@ -12,11 +12,8 @@ HEADER
   padding: 5px 0 40px 0;
 }
 
-.main-nav li:last-child {
-  padding-right: 0;
-}
-
-.main-nav li {
+.main-nav {
+  li {
   background: #FFF;
   font-weight: 700;
   font-size: .9em;
@@ -24,41 +21,29 @@ HEADER
   list-style: none;
   padding: 10px 0;
   text-transform: uppercase;
+    &:last-child {
+      padding-right: 0;      
+    }
+    a {
+      display: inline-block;
+      width:100%;
+    }
   @include tablet {
     background: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     display: inline-block;
   }
   @include desktop {
-    padding-top: 15px;
+    padding: 15px;
     float: right;
 }
 }
-
-.main-nav li a {
-  display: inline-block;
-  width:100%;
 }
 
-.profile-image-container {
-  margin: 0 auto;
-  width:60%;
-  padding-bottom: 20px;
-  @include tablet  {
-    float: right;
-    width: 40%;
-    padding-bottom: 30px;
-  }
-}
-
-.profile-image {
-  width: 100%;
-}
 
 .intro {
-  margin: 0 auto;
-  padding-bottom: 40px;
+  @extend %center-things;
+  padding-bottom: 30px;
   width:90%;
   @include tablet {
     float: left;
@@ -73,44 +58,16 @@ MAIN BODY
 ******************/
 
 .content {
-  text-align: center;
-  margin: 0 auto;
+    p {
+    width: 95%;
+    padding-bottom: 30px;
+  }
+  img {
+    width: 100%;
+  }
+  @extend %center-things;
+  padding-bottom: 30px;
   width:90%;
-  padding-bottom: 30px;
-}
-
-.content-block {
-  @include tablet {
-  display: inline-block;
-  width: 50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  vertical-align: top;    
-  }
-  @include desktop  {
-  width: 33.33%;
-  }
-  p {
-    @include tablet {
-    width: 75%;
-    margin: 0 auto;   
-    }
-  h3 {
-    @include tablet {
-    padding-bottom: 10px;
-    margin: 0 auto;
-  }
-  }
-}
-}
-
-.content p {
-  width: 95%;
-  padding-bottom: 30px;
-}
-
-.content img {
-  width: 100%;
 }
 
 /*****************
@@ -119,25 +76,22 @@ FOOTER
 
 footer {
   padding-top: 20px;
-}
-
-footer p {
-  padding: 10px 0;
-}
-
-footer h2 {
-  padding: 20px 0;
+  p {
+    padding: 10px 0;
+  }
+  h2 {
+    padding: 20px 0;
+  }
 }
 
 .footer-info {
+  a:link {
+    font-weight: bold;
+  }
   padding-bottom: 30px;
   @include tablet {
     width: 60%;
   }
-}
-
-.footer-info a:link {
-  font-weight: bold;
 }
 
 hr {
