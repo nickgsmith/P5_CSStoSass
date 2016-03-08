@@ -40,15 +40,13 @@ HEADER
 }
 }
 
-
 .intro {
   @extend %center-things;
-  padding-bottom: 30px;
+  padding: 0 30px 20px 30px;
   width:90%;
   @include tablet {
     float: left;
     text-align: left;
-    padding-right: 10px;
     width: 60%;
   }
 }
